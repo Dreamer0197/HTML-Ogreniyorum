@@ -1,0 +1,15 @@
+div{
+    height: 65px;
+    position: relative;
+    animation: kosu 10s;
+}
+#at1{animation-timing-function: linear;}
+#at2{animation-timing-function: ease;}
+#at3{animation-timing-function: ease-in;}
+#at4{animation-timing-function: ease-out;}
+#at5{animation-timing-function: ease-in-out;}
+
+@keyframes kosu{
+    from{left: 0;}
+    to{left: 600px;background-color: red;}
+}

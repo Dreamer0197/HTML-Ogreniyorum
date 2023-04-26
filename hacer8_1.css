@@ -1,0 +1,57 @@
+/*input:focus{
+    background-color: red;
+}*/
+a:hover{
+    background-color: green;
+    color: white;
+}
+#numara:in-range{
+    background-color: green;
+    color: white;
+}
+#e-mail:invalid{
+    background-color: red;
+    color: white;
+}
+/*p:lang(tr){
+    background-color: red;
+    color: white;
+}*/
+option:last-child{
+    color: red;
+}
+/*p:last-of-type{
+    font-size: xx-large;
+}*/
+/*p:last-of-type b{
+    background: red;
+}*/
+a:link{
+    color: red;
+    font-size: 30px;
+}
+/*p:not(.a){
+    color: red;
+}
+p:not(.b){
+    color: green;
+}*/
+/*p:nth-last-child(1){
+    background: red;
+}*/
+/*p:only-of-type{
+    background: red;
+}*/
+p:only-child{
+background: red;
+}
+/*input:optional{
+    background: red;
+}*/
+input:out-of-range{
+    background: red;
+}
+:root{
+    background-color: yellow;
+    background-image: url();
+}

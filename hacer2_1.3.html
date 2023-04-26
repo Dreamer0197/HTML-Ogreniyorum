@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <style>
+            #mevsimler{
+                border: 2px solid black;
+            }
+            tr,td{
+                border: 1px solid black;
+                
+            }
+            /*th{
+                background-color: red;
+                color: white;
+            }
+            /*tr:nth-child(1) 1.Elemanın Gösterimi 
+            {
+                background-color:red;
+                color:white;
+
+            }
+            */
+        </style>
+    </head>
+    <body>
+        <table id="mevsimler" cellspacing="5px"><!---Cellspacingle hücre genişliği ayarlanabiliyor. -->
+            <thead><th>1.Ay</th><th>2.Ay</th><th>3.Ay</th>      <!-- Tablo başlığını oluşturma </thead> -->
+            <tbody>
+                <!-- <col style="width: 50%">
+                <col style="width: 30%">
+                <col style="width: 20%"> Sayfanın genişliğine göre hizalama yapma yeri     Collspan ile de satırlar birleştirilebiliyor -->
+              <tr><td>A</td><td>B</td><td rowspan="2">C</td><td>J</td></tr> <!--Tablo satırı oluşturma(tr),Sutun oluşturma (td),Rowspan kısmı sutunları birleştirmeye yarar-->
+              <tr><td rowspan="2">D</td><td>E</td><td>F</td></tr>
+              <tr><td>G</td><td>H</td><td>I</td></tr>
+              
+              
+            </tbody>
+            <tfoot><td></td><td colspan="3">*Mevsimler tablosu</td></tfoot><!--colspan yazılan yazının kaç sutun genişliğinde olduğuna karar verir-->
+
+        </table>
+    </body>
+</html>

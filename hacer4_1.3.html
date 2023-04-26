@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function hesapla(){
+            var dolum=parseInt(document.getElementById("dolduran").value);
+            var bosaltım=parseInt(document.getElementById("bosaltan").value);        
+            var sure=parseInt(document.getElementById("saat").value);
+         
+            var sonuc;
+            sonuc=(dolum-bosaltım)*sure/10;
+            document.getElementById("oran").value=sonuc;
+        
+        }
+    </script>
+    
+</head>
+<body>
+    <!-- <fieldset>             Kendine ait kutu oluşturuyor
+        <legend>Sifreyi giriniz</legend>
+        <b>Şifre</b><input type="text"></input>
+        <button>Onayla</button>
+    </fieldset>
+    -->                        
+    <!--<datalist id="renk-listesi">  Otomatik doldurma seçeneklerini biz belirterek yapılabilir
+        <option value="Mavi"></option>
+        <option value="Mor"></option>
+        <option value="Yeşil"></option>
+        <option value="Kırmızı"></option>
+        <option value="Sarı"></option>
+    
+    </datalist>
+    <input name="renkler" list="renk-listesi"></input>
+-->
+<!--<select>                               Açılır kutu yapılabiliyor
+    <option value="genc">18-40</option>
+    <option value="orta yaş">40-60</option>
+    <option value="ihtiyar">60-75</option>
+    <option value="yaşlı">75+</option>
+</select>
+-->
+ <!--<select name="" id="">               Kategorileştirilerek kullanılabilir bunda da optgroup etiketi kullanılır
+    <optgroup label="Meyveler">
+        <option value="Elma">Elma</option>
+        <option value="Armut">Armut</option>
+    </optgroup>
+    <optgroup label="Sebzeler">
+        <option value="Patates">Patates</option>
+        <option value="Pırasa">Pırasa</option>
+    </optgroup>
+</select>
+-->
+<!--<meter min="0" max="100" value="70"></meter><br><br>    Ölçek oluşturma
+<meter value="0.8"></meter><br><br>
+-->
+Saatte <input type="text" id="dolduran" style="width: 40px;">m <sup>3</sup>dolduruyor:<br><br>
+Saatte <input type="text" id="bosaltan" style="width: 40px;">m <sup>3</sup>boşaltıyor:<br><br>
+<p>Havuz 10m<sup>3</sup>ise...</p>
+<input type="text" id="saat"style="width: 40px;">saat sonra
+<meter id="oran"value="0"></meter>oranında dolu olur.<br><br>
+<button onclick="hesapla();">HESAPLA</button>
+</body>
+</html>

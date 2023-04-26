@@ -1,0 +1,10 @@
+p:first-child{
+    font-size: xx-large;
+}
+p:first-child b{
+    background: red;
+}
+li:first-of-type{
+    color: red;
+    background-color: silver;
+}

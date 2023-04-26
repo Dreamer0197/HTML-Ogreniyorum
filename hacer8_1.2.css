@@ -1,0 +1,20 @@
+:target{
+    background-color: red;
+    border: 1px solid black;
+}
+input:valid{
+    background-color: red;
+    border: 1px solid black;
+}
+a:visited{
+    color: green;
+}
+p[id^="bas"]{
+    color: red;
+}
+p[id$="in"]{
+    color: orange;
+}
+img[src*="https:\\"]{
+    border: 20px solid black;
+}
